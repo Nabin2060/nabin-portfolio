@@ -22,7 +22,7 @@ export const links = [
   {
     index: 3,
     title: "Find me on Medium",
-    href: "https://medium.com/@noworneverev",
+    href: "https://medium.com/@adhikarinabin2060",
     icon: <FaMedium />
   }
 ];
