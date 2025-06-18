@@ -19,6 +19,13 @@
 - C++
 - Java
 
+- Blockchain
+  -Solidity
+  -Remix
+  -Hardhat
+  -Truffle
+  -smart contract dev
+
 ## Other Skills
 
 - DSA (Basic)

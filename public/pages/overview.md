@@ -60,6 +60,10 @@ Results-oriented Full Stack Developer with over 1.5 years of practical experienc
 - C++
 - Java
 
+## Blockchain
+
+Hands-on Experience in: Solidity,Truffle, Open Zeppelin, Hardhat and Remix
+
 ## Other Skills
 
 - DSA (Basic)

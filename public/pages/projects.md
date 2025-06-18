@@ -4,6 +4,34 @@
 
 A curated list of my personal and professional projects showcasing my expertise in **Full Stack**,**MERN**,**Web Development**. Each project includes its **live demo** (if available) and highlights the **technologies used**.
 
+**Swasthya Sewa – Full Stack Doctor Appointment System** | 🔗 swasthya-sewa\*\*
+
+- Developed a full-featured MERN stack doctor appointment platform with separate frontend, backend, and admin panel hosted under a unified Render deployment.
+- Implemented secure authentication using JWT and role-based access for patients, doctors, and administrators.
+- Integrated appointment booking, doctor profile management, and admin analytics dashboard.
+- Focused on responsive UI, RESTful API integration, and clean modular codebase.
+- **Technologies Used**: JavaScript,Typescript, React.js,Node.js,Express.js,MongoDB,Redux,HTML,CSS,Render
+- **Live Demo**: [swasthya-sewa](https://swasthya-sewa-frontend.onrender.com/)
+- **Live Demo**: [swasthya-sewa](https://swasthya-sewa-admin.onrender.com/)
+
+**GS-Abroad Study – Full Stack Educational Consultancy Platform** | 🔗 gs-abroad study\*\*
+
+- Developed a production-ready full-stack platform for an educational consultancy with separate frontend and backend using Next.js and Express.
+- Implemented secure authentication, program/course listings, lead capture forms, and dynamic content management.
+- Designed a fully responsive and SEO-friendly UI with Tailwind CSS and Next.js features like SSR.
+- Deployed the platform on a live custom domain, ensuring high availability and real-world usability
+- **Technologies Used**: Next.js, Node.js, Express, MongoDB, Tailwind CSS, JWT, Real Domain Hosting
+- **Live Demo**: [gs-abroad study.com](https://genuine-student-gs-abroad.vercel.app/)
+
+**Sahid Prakash Thapa Foundation – Full Stack Official Website**
+
+- Built and deployed a dynamic full-stack website for an NGO using Next.js for the frontend and Express.js with PostgreSQL for the backend.
+- Implemented secure admin login, content management system, and optimized page rendering with SEO in mind.
+- Designed a responsive and accessible UI using Tailwind CSS and deployed it on a custom domain with full production setup.
+- Ensured real-time data handling and smooth admin workflows for news, events, and gallery management.
+- **Technologies Used**: Next.js, Node.js, Express, PostgreSQL, Tailwind CSS, JWT, Custom Domain Hosting
+- **Live Demo**: [sahidprakashthapa.org.np](https://www.sahidprakashthapa.org.np/)
+
 **Full-Stack MovieMate Web Application** | 🔗 **MovieMate**
 
 - Developed a full-stack movie booking app using MERN stack (MongoDB, Express.js, React.js, Node.js) and RESTful APIs, with JWT authentication and OTP verification for secure sessions.
