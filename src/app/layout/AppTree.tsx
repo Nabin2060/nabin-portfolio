@@ -72,7 +72,7 @@ export default function AppTree({
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ minWidth: 220 }}
+      sx={{ minWidth: { xs: 140, sm: 220 } }}
       defaultExpanded={["-1"]}
     >
       <TreeItem
