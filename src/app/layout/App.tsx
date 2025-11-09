@@ -1,4 +1,5 @@
 import {
+  Box,
   Container,
   createTheme,
   CssBaseline,
@@ -126,7 +127,7 @@ export default function App() {
       >
         <Grid container sx={{ overflow: "auto", overflowY: "hidden" }}>
           <Grid container sx={{ overflow: "auto" }}>
-            <Grid item sx={{ width: 50 }}>
+            <Grid item sx={{ width: { xs: 44, sm: 50 } }}>
               <Sidebar
                 setExpanded={setExpanded}
                 expanded={expanded}
@@ -140,7 +141,8 @@ export default function App() {
                 item
                 sx={{
                   backgroundColor: darkMode ? "#252527" : "#f3f3f3",
-                  width: 220,
+                  display: { xs: "none", sm: "block" },
+                  width: { sm: 220 },
                 }}
               >
                 <Stack sx={{ mt: 1 }}>
@@ -164,12 +166,17 @@ export default function App() {
               </Grid>
             )}
 
-            <Grid item xs zeroMinWidth>
-              <Grid
-                sx={{
-                  height: "33px",
-                }}
-              >
+            <Grid
+              item
+              xs
+              zeroMinWidth
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                height: "calc(100vh - 20px)",
+              }}
+            >
+              <Box sx={{ flex: "0 0 33px", height: 33 }}>
                 <AppButtons
                   pages={visiblePages}
                   selectedIndex={selectedIndex}
@@ -179,14 +186,10 @@ export default function App() {
                   visiblePageIndexs={visiblePageIndexs}
                   setVisiblePageIndexs={setVisiblePageIndexs}
                 />
-              </Grid>
+              </Box>
 
-              <Grid
-                sx={{
-                  scrollBehavior: "smooth",
-                  overflowY: "auto",
-                  height: `calc(100vh - 20px - 33px)`,
-                }}
+              <Box
+                sx={{ flex: 1, overflowY: "auto", scrollBehavior: "smooth" }}
               >
                 <Routes>
                   <Route
@@ -206,7 +209,7 @@ export default function App() {
                   />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
-              </Grid>
+              </Box>
             </Grid>
           </Grid>
           <Grid item lg={12} md={12} sm={12} xs={12}>
