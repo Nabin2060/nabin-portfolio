@@ -279,9 +279,17 @@ export default function MDContainer({ path }: Props) {
   }, [path]);
 
   useEffect(() => {
+    const appName =
+      process.env.REACT_APP_NAME ||
+      process.env.REACT_APP_NAMES ||
+      "Nabin Adhikari";
     let title = pathname.substring(1, pathname.length);
+    if (!title) {
+      document.title = appName;
+      return;
+    }
     title = title[0].toUpperCase() + title.substring(1);
-    document.title = `${process.env.REACT_APP_NAME!} | ${title}`;
+    document.title = `${appName} | ${title}`;
   }, [pathname]);
 
   return (
