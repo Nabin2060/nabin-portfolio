@@ -1,12 +1,4 @@
-import {
-  Box,
-  Grid,
-  Link,
-  Paper,
-  Stack,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Grid, Link, Paper, Stack, Typography } from "@mui/material";
 import {
   VscRemote,
   VscError,
@@ -18,8 +10,6 @@ import {
 import { IoIosGitBranch } from "react-icons/io";
 
 export default function Footer() {
-  const theme = useTheme();
-
   return (
     <Box
       component={Paper}
@@ -32,7 +22,7 @@ export default function Footer() {
         <Grid
           item
           sx={{
-            width: "35px",
+            width: { xs: 35, sm: 35 },
             backgroundColor: "#2E8461",
             justifyContent: "center",
             alignItems: "center",
@@ -45,9 +35,10 @@ export default function Footer() {
         >
           <VscRemote fontSize="0.9rem" />
         </Grid>
+
         <Grid
           item
-          sx={{ backgroundColor: "#3279CB", width: "200px" }}
+          sx={{ backgroundColor: "#3279CB", width: { xs: 120, sm: 200 } }}
           display="flex"
         >
           <Stack direction="row" spacing={0.5} sx={{ pl: 1 }}>
@@ -71,7 +62,7 @@ export default function Footer() {
               <Typography
                 sx={{
                   marginLeft: "2px",
-                  fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                  fontSize: { xs: "0.6rem", md: "0.7rem" },
                 }}
               >
                 main
@@ -108,7 +99,7 @@ export default function Footer() {
               >
                 <Typography
                   sx={{
-                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    fontSize: { xs: "0.6rem", md: "0.7rem" },
                     marginLeft: "2px",
                   }}
                 >
@@ -136,7 +127,7 @@ export default function Footer() {
               >
                 <Typography
                   sx={{
-                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    fontSize: { xs: "0.6rem", md: "0.7rem" },
                     marginLeft: "2px",
                   }}
                 >
@@ -146,9 +137,10 @@ export default function Footer() {
             </Stack>
           </Stack>
         </Grid>
+
         <Grid
           item
-          sx={{ backgroundColor: "#3279CB", minWidth: `calc(100% - 235px)` }}
+          sx={{ backgroundColor: "#3279CB", flex: 1, minWidth: 0 }}
           display="flex"
           justifyContent="flex-end"
         >
@@ -174,7 +166,7 @@ export default function Footer() {
                 <VscCheck fontSize="0.9rem" />
                 <Typography
                   sx={{
-                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    fontSize: { xs: "0.6rem", md: "0.7rem" },
                     marginLeft: "3px",
                   }}
                 >
