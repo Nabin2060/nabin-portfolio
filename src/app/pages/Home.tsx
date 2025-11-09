@@ -88,7 +88,7 @@ import {
   Link,
   Stack,
   Tooltip,
-  Typography
+  Typography,
 } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
@@ -120,11 +120,11 @@ export default function Home({ setSelectedIndex }: Props) {
         "I&#39;m a Software Engineer &#x1F601;",
         "I&#39;m a Full Stack Developer &#x1F601;",
         "I&#39;m a Blockchain Engineer &#x1F607;",
-        "<i>I&#39;m not a great programmer; I&#39;m just a good programmer with great habits.</i>"
+        "<i>I&#39;m not a great programmer; I&#39;m just a good programmer with great habits.</i>",
       ],
       typeSpeed: 40,
       backSpeed: 40,
-      loop: true
+      loop: true,
     };
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, options);
